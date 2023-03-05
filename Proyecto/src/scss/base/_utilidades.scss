@@ -1,0 +1,39 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.imagen1{
+
+    background-image:url(../img/slider1.webp);
+    background-size: cover;
+    background-position: center center;
+    
+} 
+.imagen2{
+
+    background-image:url(../img/slider2.webp);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.imagen3{
+
+    background-image:url(../img/slider3.webp);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.abajo{
+   
+    background-color: #fff;
+
+
+    position: fixed;
+  
+    transition: .6s;
+    width: 100%;
+    z-index: 999;
+
+    transition-duration: .8ms;
+    box-shadow:0 0 10px 1px rgb(0 0 0 / 20%);
+}

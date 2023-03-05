@@ -1,0 +1,25 @@
+@use '../base/variables' as v ;
+@use '../base/mixins' as m;
+
+.opiniones{
+    margin-top: 10rem;
+
+    &__grid{
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 3rem; 
+            
+         }
+    }
+
+    &__card{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    &__img{
+        width: 5rem;
+    }
+}

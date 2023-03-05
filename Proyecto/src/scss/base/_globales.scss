@@ -1,0 +1,61 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:  v.$fuente_principal;
+    position: relative;
+    height: 100%;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+P{
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1.7rem;
+    color: v.$colorParrafo;
+}
+h1,h2{
+    font-weight: 700;
+}
+.boton{
+    display: block;
+    background-color: v.$colorPrincipal;
+    color: v.$colorBlanco;
+    width: 100%;
+    padding: 1.5rem 4rem ;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: .5s;
+
+    &:hover{
+        background-color: v.$colorHover;
+    }
+
+    @include m.tablet { 
+        width: auto;
+        display: inline-block;
+        
+     }
+
+
+    
+}

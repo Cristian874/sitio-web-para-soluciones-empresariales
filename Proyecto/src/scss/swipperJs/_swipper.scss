@@ -1,0 +1,91 @@
+
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.carrusel__texto{
+ 
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+
+  @include m.tablet { 
+    padding: 0 5rem;
+    
+   }
+
+  @include m.desktop { 
+    padding: 0 10rem;
+    
+   }
+
+ 
+}
+.carrusel__heading{
+
+  color: v.$colorBlanco;
+  font-size: 5rem;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  @include m.desktop { 
+    width: 40%;    
+   }
+}
+
+.carrusel__txt{
+  font-size: 1.8rem;
+  color: v.$colorBlanco;
+
+  @include m.tablet { 
+    width: 40%;
+    
+   }
+
+}
+
+.carrusel__botones{
+ 
+  
+  @include m.tablet { 
+    display: flex;
+    gap: 2rem;
+    
+   }
+}
+
+.carrusel__btn{
+  width: auto;
+  margin-top: 5rem;
+  @include m.tablet { 
+    width: unset;
+
+   }
+
+   @include m.desktop{
+    margin-top: 3rem;
+   }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+

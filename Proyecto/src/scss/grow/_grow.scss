@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.grow{
+    margin-top: 10rem;
+    background-image:linear-gradient(90deg,#da4d37 0%, #ff4d3300  70% )
+    , url(../img/slider3.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 50rem;
+    display: grid;
+    place-items: center;
+    opacity: .9;
+    color: v.$colorBlanco;
+
+
+    &__title{
+        font-size: 1.8rem;
+    }
+    &__heading{
+       
+        font-size: 3rem;
+        @include m.tablet { 
+            width: 40%;
+         }
+    }
+   
+}
+

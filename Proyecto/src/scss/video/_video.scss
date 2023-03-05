@@ -1,0 +1,80 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.video{
+    margin-top: 10rem;
+
+
+    &__grid{
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem; 
+            place-items: center;
+         }
+    }
+
+    &__imagen{
+        position: relative;
+    }
+
+    &__img{
+        &:hover{
+            cursor: pointer;
+            opacity: .7;
+        }
+    }
+   
+
+    &__icono{
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: 25%;
+        right: 0;
+        left: 0;
+       
+        margin: auto;
+        background-color: transparent;
+        border: .4rem solid brown;
+        padding: 2rem;
+        border-radius: 50%;
+    
+        @include m.tablet {
+            top: 40%;
+            
+         }
+
+        
+
+
+     
+   
+    
+
+
+    }
+
+    &__informacion{
+        margin-top: 5rem;
+        text-align: center;
+        @include m.desktop { 
+            text-align: left;
+            padding: 0 5rem;
+            margin-top: 0;
+         }
+    
+    }
+
+    &__heading{
+        font-weight: 400;
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        @include m.tablet { 
+            font-size: 5rem;
+         }
+    }
+}
+
